@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Menanpilkan Hasil Perhitungan Matematika</title>
+	</head>
+	<style>
+		body {background-color: #1abc9c!important;}
+		.container {border: 1px solid #333;padding:20px}
+		.mt-20 {margin-top:20px;}
+	</style>
+	<body>
+		<div class="container">
+			<h1>Menanpilkan Hasil Perhitungan Matematika</h1>
+			<div>Bilangan A = <span id="bil-a"></span></div>				
+			<div class="mt-20">Bilangan B = <span id="bil-b"></span></div>
+			<div class="mt-20">Bilangan A + Bilangan B = <span id="tambah">-</span>
+			<div>Bilangan A - Bilangan B = <span id="kurang">-</span>
+			<div>Bilangan A * Bilangan B = <span id="kali">-</span>
+			<div>Bilangan A / Bilangan B = <span id="bagi">-</span>
+			<div>Bilangan A  MOD Bilangan B = <span id="mod">-</span>
+			<div class="mt-20">Bilangan A  > Bilangan B = <span id="lebih-besar">-</span>
+			<div>Bilangan A  < Bilangan B = <span id="lebih-kecil">-</span>
+			<div>Bilangan A  = Bilangan B = <span id="samadengan">-</span>
+		</div>
+		
+		
+		<script>
+				
+				
+//			function proses() {
+				bilA = 10;
+				bilB = 5
+				document.getElementById('bil-a').innerHTML = bilA;
+				document.getElementById('bil-b').innerHTML = bilB;
+				
+				document.getElementById('tambah').innerHTML = parseInt(bilA) + parseInt(bilB);
+				document.getElementById('kurang').innerHTML = parseInt(bilA) - parseInt(bilB);
+				document.getElementById('kali').innerHTML = parseInt(bilA) * parseInt(bilB);
+				document.getElementById('bagi').innerHTML = parseInt(bilA) / parseInt(bilB);
+				document.getElementById('mod').innerHTML = parseInt(bilA) % parseInt(bilB);
+				document.getElementById('lebih-besar').innerHTML = parseInt(bilA) > parseInt(bilB);
+				document.getElementById('lebih-kecil').innerHTML = parseInt(bilA) < parseInt(bilB);
+				document.getElementById('samadengan').innerHTML = parseInt(bilA) == parseInt(bilB);
+	//		}		
+		
+		</script>
+	</body>
+</html>
