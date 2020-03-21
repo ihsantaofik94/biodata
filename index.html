@@ -1,47 +1,55 @@
 <html>
 	<head>
-		<title>Menanpilkan Hasil Perhitungan Matematika</title>
+		<title>Biodata Mahasiswa UNIKOM</title>
+		<style>
+		body {background-color: #1abc9c!important;
+		font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+		}
+		img {border-radius: 50%; width:200px;border:4px solid white;}
+		.text-white {color: white;}
+		table {color: white;font-family:Arial;}
+		.garis {
+			height: 4px;
+			background-color: white;
+			display: block;
+			width: 50%;
+			border-radius: 10px;
+			margin-top:20px;
+		}
+		.title {
+		text-transform:uppercase;
+		}
+		</style>
 	</head>
-	<style>
-		body {background-color: #1abc9c!important;}
-		.container {border: 1px solid #333;padding:20px}
-		.mt-20 {margin-top:20px;}
-	</style>
-	<body>
-		<div class="container">
-			<h1>Menanpilkan Hasil Perhitungan Matematika</h1>
-			<div>Bilangan A = <span id="bil-a"></span></div>				
-			<div class="mt-20">Bilangan B = <span id="bil-b"></span></div>
-			<div class="mt-20">Bilangan A + Bilangan B = <span id="tambah">-</span>
-			<div>Bilangan A - Bilangan B = <span id="kurang">-</span>
-			<div>Bilangan A * Bilangan B = <span id="kali">-</span>
-			<div>Bilangan A / Bilangan B = <span id="bagi">-</span>
-			<div>Bilangan A  MOD Bilangan B = <span id="mod">-</span>
-			<div class="mt-20">Bilangan A  > Bilangan B = <span id="lebih-besar">-</span>
-			<div>Bilangan A  < Bilangan B = <span id="lebih-kecil">-</span>
-			<div>Bilangan A  = Bilangan B = <span id="samadengan">-</span>
-		</div>
-		
-		
+	<body>	
+		<center>
+			
+			
+			<h1 class="title text-white">Biodata Mahasiswa UNIKOM</h1>
+			<img src="ihsan.jpg">
+			<div class="garis"></div>
+			<h2 id="nama-container" class="text-white"></h2>
+			<div class="text-white"><span id="nim-container" ></span> - <span id="kelas-container"></span></div>
+			<h3 id="jurusan-container" class="text-white"></h3>
+			<h3 id="fakultas-container" class="text-white"></h3>
+		</center>
+
+
+
+
 		<script>
+				nama = 'Ihsan Taofik';
+				nim = 10119315;
+				kelas = 'IF-8';
+				jurusan = 'Teknik Informatika';
+				fakultas = 'Fakultas Teknik & Ilmu Komputer';
 				
-				
-//			function proses() {
-				bilA = 10;
-				bilB = 5
-				document.getElementById('bil-a').innerHTML = bilA;
-				document.getElementById('bil-b').innerHTML = bilB;
-				
-				document.getElementById('tambah').innerHTML = parseInt(bilA) + parseInt(bilB);
-				document.getElementById('kurang').innerHTML = parseInt(bilA) - parseInt(bilB);
-				document.getElementById('kali').innerHTML = parseInt(bilA) * parseInt(bilB);
-				document.getElementById('bagi').innerHTML = parseInt(bilA) / parseInt(bilB);
-				document.getElementById('mod').innerHTML = parseInt(bilA) % parseInt(bilB);
-				document.getElementById('lebih-besar').innerHTML = parseInt(bilA) > parseInt(bilB);
-				document.getElementById('lebih-kecil').innerHTML = parseInt(bilA) < parseInt(bilB);
-				document.getElementById('samadengan').innerHTML = parseInt(bilA) == parseInt(bilB);
-	//		}		
-		
+				document.getElementById('nama-container').innerHTML = nama;
+				document.getElementById('nim-container').innerHTML = nim;
+				document.getElementById('kelas-container').innerHTML = kelas;
+				document.getElementById('jurusan-container').innerHTML = jurusan;
+				document.getElementById('fakultas-container').innerHTML = fakultas;
 		</script>
+
 	</body>
-</html>
+</html> 
